@@ -8,7 +8,7 @@
     --color-text: #333333;
 }
 
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,6 @@ body {
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* Navegación */
 nav {
     background-color: var(--bg);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -65,7 +64,6 @@ nav {
     color: var(--color-secondary);
 }
 
-/* Sección Hero */
 #inicio {
     height: 100vh;
     display: flex;
@@ -151,7 +149,7 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/* Sección Portafolio */
+
 .portafolio-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -171,7 +169,7 @@ section h2 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Botón toggle modo oscuro */
+
 .dark-toggle {
     background: none;
     border: none;
@@ -188,7 +186,7 @@ section h2 {
     transform: translateY(-2px);
 }
 
-/* Tema oscuro (se ajustan variables para mantener consistencia) */
+
 .dark {
     --bg: #0b1220;
     --card-bg: #081027;
@@ -256,7 +254,6 @@ section h2 {
     min-height: 150px;
 }
 
-/* Footer */
 footer {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -283,7 +280,7 @@ footer {
     color: var(--color-secondary);
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
