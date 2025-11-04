@@ -3,6 +3,8 @@
     --color-primary: #0D47A1;
     --color-secondary: #42A5F5;
     --color-white: #ffffff;
+    --bg: #ffffff;
+    --card-bg: #ffffff;
     --color-text: #333333;
 }
 
@@ -17,12 +19,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--color-text);
-    background-color: var(--color-white);
+    background-color: var(--bg);
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Navegación */
 nav {
-    background-color: var(--color-white);
+    background-color: var(--bg);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
@@ -132,7 +135,7 @@ section h2 {
     min-width: 300px;
     padding: 2rem;
     text-align: center;
-    background-color: var(--color-white);
+    background-color: var(--card-bg);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -162,10 +165,36 @@ section h2 {
     flex: 1;
     min-width: 300px;
     max-width: 350px;
-    background-color: var(--color-white);
+    background-color: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Botón toggle modo oscuro */
+.dark-toggle {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.dark-toggle:hover {
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+/* Tema oscuro (se ajustan variables para mantener consistencia) */
+.dark {
+    --bg: #0b1220;
+    --card-bg: #081027;
+    --color-text: #e6f0ff;
+    --color-primary: #90caf9;
+    --color-white: #0b1220;
 }
 
 .proyecto img {
